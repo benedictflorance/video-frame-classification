@@ -26,6 +26,8 @@ Follow VideoFrameClassification.ipynb for a walkthrough of the entire problem st
 
 - Using the weights from epoch 5, we obtain a test loss of 0.508 and **test accuracy of 79.25%**. (ResNet50 gave 80.04%)
 
+- Why are the true positives low for the 'misc' class, whereas the model is able to classify the other three classes with a very high accuracy? Reason is, there are a lot of misclassified examples in the 'misc' class that should go in to the other three classes. We can observe this by visualizing the incorrect examples of the classifier and also through the PCA plot. Hence, our classifier is indeed performing rightly.
+
 ## Plots
 
 ### Finding Learning Rate
